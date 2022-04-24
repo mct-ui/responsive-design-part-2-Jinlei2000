@@ -635,40 +635,73 @@ a:focus {
 */
 
 .c-footer {
-    display: flex;
-    flex-wrap: wrap;
+    display: block;
 }
 
 .c-footer__logo {
+    padding-right: 24px;
 }
 
 .c-footer__nav {
+    gap: 96px;
     display: flex;
-    gap: 24px;
 }
 
 @media (min-width: 768px) {
-    .c-footer {
-        justify-content: center;
-        align-items: center;
+    .c-footer {}
+
+    .c-footer__logo {
+        padding: 0;
+        text-align: center;
     }
 
-    .c-footer__logo {}
-
-    .c-footer__nav {}
+    .c-footer__nav {
+        display: flex;
+        gap: 24px;
+        justify-content: center;
+    }
 }
 
 @media (min-width: 992px) {
     .c-footer {
+        display: block;
+    }
+
+    .c-footer__logo {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .c-footer__logo .c-logo {
+        margin-bottom: 0;
+    }
+
+    .c-footer__nav {
         justify-content: space-between;
     }
 
-    .c-footer__logo {}
 
-    .c-footer__logo .c-logo {}
-
-    .c-footer__nav {}
 }
+
+/*
+    Component: Title icon
+    ---
+    Special type of title with icon
+*/
+
+.c-title-icon {
+    display: flex;
+    gap: 24px;
+}
+
+.c-title-icon__icon {
+    max-width: 96px;
+}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 1200px) {}
+
 
 
 
